@@ -85,8 +85,12 @@
 
 /* 03.Typography */
 /* --------------------------------------------
-    Template Default Fonts & Fonts Styles
+    Default Fonts & Fonts Styles
  ---------------------------------------------- */
+html{
+  overflow-x: hidden;
+}
+
 body {
   font-family: "Futura", sans-serif;
   font-size: 16px;
