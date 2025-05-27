@@ -3654,21 +3654,21 @@ span a {
 }
 
 .padding-bottom120 {
-  padding-bottom: 120px;
+  padding-bottom: 30px;
 }
 @media (max-width: 1199px) {
   .padding-bottom120 {
-    padding-bottom: 70px;
+    padding-bottom: 30px;
   }
 }
 @media (max-width: 991px) {
   .padding-bottom120 {
-    padding-bottom: 50px;
+    padding-bottom: 30px;
   }
 }
 @media (max-width: 450px) {
   .padding-bottom120 {
-    padding-bottom: 35px;
+    padding-bottom: 20px;
   }
 }
 
@@ -3756,21 +3756,21 @@ span a {
 }
 
 .section-py-120 {
-  padding: 120px 0;
+  padding: 30px 0;
 }
 @media (max-width: 1199px) {
   .section-py-120 {
-    padding: 100px 0;
+    padding: 30px 0;
   }
 }
 @media (max-width: 991px) {
   .section-py-120 {
-    padding: 50px 0;
+    padding: 30px 0;
   }
 }
 @media (max-width: 450px) {
   .section-py-120 {
-    padding: 35px 0;
+    padding: 20px 0;
   }
 }
 
@@ -9429,7 +9429,7 @@ span a {
     # Video style here
 ----------------------------------------------*/
 .service-wrapper.style3 {
-  padding: 120px 0 371px;
+  padding: 30px 0 30px;
 }
 @media (max-width: 575px) {
   .service-wrapper.style3 {
@@ -12151,16 +12151,16 @@ span a {
   max-width: 100%;
 }
 .git-wrapper.style2 .git-inner .git-content {
-  padding: 141px 0 130px 0;
+  padding: 30px 0 30px 0;
 }
 @media (max-width: 991px) {
   .git-wrapper.style2 .git-inner .git-content {
-    padding: 70px 0;
+    padding: 30px 0;
   }
 }
 @media (max-width: 767px) {
   .git-wrapper.style2 .git-inner .git-content {
-    padding: 40px 0;
+    padding: 30px 0;
   }
 }
 .git-wrapper.style2 .git-inner .git-content .title-content .sub-title {
