@@ -13969,7 +13969,11 @@ span a {
 
 .carousel-control-prev,
 .carousel-control-next {
+    
     width: 5%;
+    span{
+      filter: brightness(0) saturate(100%) invert(13%) sepia(94%) saturate(7151%) hue-rotate(4deg) brightness(96%) contrast(112%);
+    }
 }
 
 .carousel-indicators {
