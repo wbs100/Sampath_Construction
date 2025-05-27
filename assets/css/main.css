@@ -5250,7 +5250,8 @@ span a {
   z-index: 99;
 }
 .footer-section .footer-wrapper.style2 {
-  padding: 80px 0 69px 0;
+  padding: 30px 0 30px 0;
+  height: fit-content;
 }
 .footer-section .footer-wrapper.style2 .footer-text-slider {
   position: relative;
@@ -5258,7 +5259,7 @@ span a {
 }
 @media (max-width: 575px) {
   .footer-section .footer-wrapper.style2 {
-    padding: 40px 0 69px 0;
+    padding: 30px 0 30px 0;
   }
 }
 .footer-section .footer-wrapper.style2 .footer-widget .footer-top {
