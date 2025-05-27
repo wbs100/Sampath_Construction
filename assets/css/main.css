@@ -1,10 +1,4 @@
 /*-----------------------------------------------------------------
-Theme Name: Buildra
-Author: Code Your Way
-Author URI: https://themeforest.net/user/exdesigners 
-Version: 1.0.0 
-Description: Sampath Constructions  <
-
 -------------------------------------------------------------------
  CSS TABLE OF CONTENTS
 -------------------------------------------------------------------
@@ -5250,7 +5244,7 @@ span a {
   z-index: 99;
 }
 .footer-section .footer-wrapper.style2 {
-  padding: 30px 0 30px 0;
+  padding: 30px 0 0px 0;
   height: fit-content;
 }
 .footer-section .footer-wrapper.style2 .footer-text-slider {
@@ -5259,7 +5253,7 @@ span a {
 }
 @media (max-width: 575px) {
   .footer-section .footer-wrapper.style2 {
-    padding: 30px 0 30px 0;
+    padding: 30px 0 0px 0;
   }
 }
 .footer-section .footer-wrapper.style2 .footer-widget .footer-top {
@@ -5293,7 +5287,7 @@ span a {
   margin-bottom: 31px;
 }
 .footer-section .footer-wrapper.style2 .footer-widget.style1 .footer-single-wid .title {
-  margin-bottom: 31px;
+  margin-bottom: 10px;
 }
 .footer-section .footer-wrapper.style2 .footer-widget.style1 .footer-single-wid .title h3 {
   color: var(--white);
@@ -5339,7 +5333,7 @@ span a {
   }
 }
 .footer-section .footer-wrapper.style2 .footer-widget.style1 .footer-single-wid .content ul {
-  margin-top: 30px;
+  margin-top: 10px;
 }
 .footer-section .footer-wrapper.style2 .footer-widget.style1 .footer-single-wid .content ul li {
   color: var(--white);
@@ -5380,7 +5374,7 @@ span a {
   margin-right: 15px;
 }
 .footer-section .footer-wrapper.style2 .footer-widget.style1 .footer-single-wid .content .footer-menu li {
-  margin-bottom: 21px;
+  margin-bottom: 10px;
 }
 .footer-section .footer-wrapper.style2 .footer-widget.style1 .footer-single-wid .content .footer-menu li:last-child {
   margin-bottom: 0px;
@@ -5393,7 +5387,7 @@ span a {
   line-height: 30px;
 }
 .footer-section .footer-wrapper.style2 .footer-widget.style1 .footer-single-wid .content .services-list li {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   max-width: 300px;
 }
 .footer-section .footer-wrapper.style2 .footer-widget.style1 .footer-single-wid .content .services-list li a {
@@ -5469,12 +5463,12 @@ span a {
   font-size: 16px;
 }
 .footer-section .footer-wrapper.style2 .footer-widget.style1 .footer-single-wid .footer-contact-menu .contact-item {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   display: flex;
   align-items: center;
 }
 .footer-section .footer-wrapper.style2 .footer-widget.style1 .footer-single-wid .footer-contact-menu .contact-item:last-child {
-  margin-bottom: 0;
+  margin-bottom: 10;
 }
 .footer-section .footer-wrapper.style2 .footer-widget.style1 .footer-single-wid .footer-contact-menu .contact-item .icon i {
   margin-right: 15px;
@@ -5549,7 +5543,7 @@ span a {
 .footer-section .footer-bottom .footer-bottom-wrapper .footer-services {
   display: flex;
   gap: 18px;
-  padding: 30px;
+  padding: 10px;
 }
 @media (max-width: 991px) {
   .footer-section .footer-bottom .footer-bottom-wrapper .footer-services {
@@ -8471,7 +8465,7 @@ span a {
 .contact-form.style3 {
   width: 629px;
   border-radius: 20px;
-  background: var(--title);
+  background: var(--white);
 }
 @media (max-width: 1399px) {
   .contact-form.style3 {
@@ -8522,10 +8516,10 @@ span a {
 .contact-form.style3 form .form-row .form-group .textarea-field {
   max-width: 100%;
   border-radius: 999px;
-  background: var(--title);
+  background: var(--white);
   border: 2px solid rgba(208, 208, 208, 0.2);
   padding: 15px 30px;
-  color: var(--white);
+  color: var(--title);
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -8540,7 +8534,7 @@ span a {
 }
 .contact-form.style3 form .form-row .form-group .input-field::placeholder,
 .contact-form.style3 form .form-row .form-group .textarea-field::placeholder {
-  color: var(--white);
+  color: var(--border);
 }
 .contact-form.style3 form .form-row .form-group .textarea-field {
   border-radius: 20px;
@@ -12260,7 +12254,7 @@ span a {
   }
 }
 .git-wrapper.style3 .git-form {
-  background: var(--title);
+  background: var(--white);
   padding: 120px 0 237px 80px;
   margin-left: -61px;
 }
@@ -12269,16 +12263,20 @@ span a {
     padding: 120px 0 237px 61px;
   }
 }
-@media (max-width: 470px) {
+@media (max-width: 1200px) {
   .git-wrapper.style3 .git-form {
-    padding: 60px 0 160px 61px;
+    padding: 30px 0px;
+    margin-left: 0;
   }
+}
+@media (max-width: 470px) {
+  
 }
 .git-wrapper.style3 .git-form .title {
   margin-bottom: 30px;
 }
 .git-wrapper.style3 .git-form .title h2 {
-  color: #FFF;
+  color: #000;
   font-size: 36.563px;
   font-style: normal;
   font-weight: 700;
@@ -12432,4 +12430,10 @@ span a {
   .bento-wrapper.style1 .bento-right .item .thumb img {
     max-width: 100%;
   }
-}/*# sourceMappingURL=main.css.map */
+}
+
+/*udara was here*/
+
+.footer-section *{
+  font-size: 13px !important;
+}

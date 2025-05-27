@@ -509,8 +509,8 @@
         </div>
     </div>
 
-    <!-- Team Section Start -->
-    <div class="team-section padding-bottom120 fix" style="padding-top: 30px;">
+    <!-- Team Section Start (hidden) -->
+    <div class="team-section padding-bottom120 fix" style="padding-top: 30px; display: none;">
         <div class="team-wrapper style2">
             <div class="container">
                 <div class="title-section style5">
@@ -1114,110 +1114,67 @@
     </div>
 
     <!-- Get in touch Section Start -->
-    <div class="git-section">
-        <div class="git-wrapper section-bg style2">
-            <div class="git-shape">
-                <img src="assets/images/shape/gitShape2_1.png" alt="shape">
-            </div>
-            <div class="git-inner">
-                <div class="thumb">
-                    <img src="assets/images/git/gitThumb2_1.png" alt="">
-                </div>
-                <div class="git-content">
-                    <div class="title-content sec-title-animation animation-style2">
-                        <span class="sub-title title-animation">
-                            Get in touch
-                        </span>
-                        <h2 class="title-animation">Construction vary complexity</h2>
-                    </div>
-                    <div class="company-contact-menu">
-                        <div class="contact-item">
-                            <div class="icon">
-                                <i class="fa-solid fa-phone"></i>
-                            </div>
-                            <div class="content">
-                                <a href="tel:+94775757735">+94 77 575 7735</a>
-                                <div class="titles">
-                                    <p>Phone support</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <div class="icon">
-                                <i class="fa-solid fa-envelope"></i>
-                            </div>
-                            <div class="content">
-                                <a
-                                    href="mailto:sampathcounstruction@example.com"><span
-                                        >sampathcounstruction@example.com</span></a>
-                                <div class="titles">
-                                    <p>Email</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <div class="icon">
-                                <i class="fa-solid fa-location-dot"></i>
-                            </div>
-                            <div class="content">
-                                <h4>Peradeniya Road, Kandy</h4>
-                                <div class="titles">
-                                    <p>Location</p>
-                                </div>
-                            </div>
-                        </div>
+    <!--new (from index-three)-->
+        <div class="git-section">
+        <div class="git-wrapper style3">
+            <div class="row gx-0">
+                <div class="col-xl-6">
+                    <div class="thumb">
+                        <img src="assets/images/git/gitThumb3_1.png" alt="thumb">
                     </div>
                 </div>
-            </div>
-            <div class="git-form">
-                <div class="contact-form style2">
-                    <form id="contact-form" action="https://buildra.codeurway.com/assets/mail.php" method="post">
-                        <!-- First Row -->
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="name">Your Name</label>
-                                <input type="text" id="name" placeholder="Your Name" name="name" class="input-field">
-                            </div>
-                            <div class="form-group">
-                                <label for="email">Your Email</label>
-                                <input type="email" id="email" placeholder="Your Email" name="email"
-                                    class="input-field">
-                            </div>
+                <div class="col-xl-6">
+                    <div class="git-form">
+                        <div class="title sec-title-animation animation-style2">
+                            <h2 class="title-animation">Send Message</h2>
                         </div>
+                        <div class="contact-form style3">
+                            <form id="contact-form" action="https://buildra.codeurway.com/assets/mail.php" method="post">
+                                <!-- First Row -->
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <input type="text" id="name" placeholder="Your Name" name="name"
+                                            class="input-field">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="email" id="email" placeholder="Your Email" name="email"
+                                            class="input-field">
+                                    </div>
+                                </div>
 
-                        <!-- Second Row -->
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="phone">Your Number</label>
-                                <input type="tel" id="phone" placeholder="Phone Number" name="phone"
-                                    class="input-field">
-                            </div>
-                            <div class="form-group select-field">
-                                <label for="property">Property Type</label>
-                                <select id="property" name="option" class="input-field">
-                                    <option disabled="" selected="">Choose a Option</option>
-                                    <option value="option1">Option 1</option>
-                                    <option value="option2">Option 2</option>
-                                </select>
-                                <span class="icon">
-                                    <i class="fa-solid fa-angle-down"></i>
-                                </span>
-                            </div>
-                        </div>
+                                <!-- Second Row -->
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <input type="tel" id="phone" placeholder="Phone Number" name="phone"
+                                            class="input-field">
+                                    </div>
+                                    <div class="form-group select-field">
+                                        <select id="property" name="option" class="input-field">
+                                            <option disabled="" selected="">Choose a Option</option>
+                                            <option value="option1">Option 1</option>
+                                            <option value="option2">Option 2</option>
+                                        </select>
+                                        <span class="icon">
+                                            <i class="fa-solid fa-angle-down"></i>
+                                        </span>
+                                    </div>
+                                </div>
 
-                        <!-- Third Row -->
-                        <div class="form-row">
-                            <div class="form-group full-width">
-                                <label for="message">Message</label>
-                                <textarea id="message" placeholder="Message here.." name="message"
-                                    class="textarea-field"></textarea>
-                            </div>
+                                <!-- Third Row -->
+                                <div class="form-row">
+                                    <div class="form-group full-width">
+                                        <textarea id="message" placeholder="Message here.." name="message"
+                                            class="textarea-field"></textarea>
+                                    </div>
+                                </div>
+                                <div class="btn-wrapper">
+                                    <button class="gt-btn style5 d-block w-100 text-center gt-btn-icon-1">Sent
+                                        Now</button>
+                                </div>
+                                <div class="ajax-response"></div>
+                            </form>
                         </div>
-                        <div class="btn-wrapper">
-                            <button class="gt-btn style5 d-block w-100 text-center gt-btn-icon-1">Sent Now</button>
-                        </div>
-                        <div class="ajax-response"></div>
-                    </form>
+                    </div>
                 </div>
             </div>
         </div>
@@ -1334,7 +1291,7 @@
                         <div class="col-xl-3 col-lg-6">
                             <div class="footer-single-wid">
                                 <div class="thumb">
-                                    <img src="assets/images/logo/footerLogo1_1.png" alt="">
+                                    <h4 style="font-size: 20px !important; color: white;">Sampath Constructions</h4>
                                 </div>
                                 <div class="content">
                                     <p>Includes the a websites representati the personal portfolio categor </p>
@@ -1367,8 +1324,8 @@
                                     <ul class="footer-menu">
                                         <li><a href="#">Home</a></li>
                                         <li><a href="#">About</a></li>
-                                        <li><a href="#">Blog</a></li>
-                                        <li><a href="#">Pages</a></li>
+                                        <li><a href="#">Services</a></li>
+                                        <li><a href="#">Projects</a></li>
                                         <li><a href="#">Contact</a></li>
                                     </ul>
                                 </div>
