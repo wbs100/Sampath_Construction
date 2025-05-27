@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Gallery Modal</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Modal customizations */
+        .modal-dialog {
+            max-width: 90%;
+        }
+        
+        .carousel-item img {
+            width: 100%;
+            height: 70vh;
+            object-fit: cover;
+        }
+        
+        .carousel-control-prev,
+        .carousel-control-next {
+            width: 5%;
+        }
+        
+        .carousel-indicators {
+            bottom: -50px;
+        }
+        
+        .carousel-indicators button {
+            background-color: #007bff;
+        }
+        
+        .modal-header {
+            border-bottom: 1px solid #dee2e6;
+        }
+        
+        .project-title {
+            color: #333;
+            margin: 0;
+        }
+        
+        .project-location {
+            color: #666;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row">
+            <!-- Sample project items -->
+            <div class="col-xl-4 col-lg-4 col-md-6 project-item homes mb-4" 
+                 data-project-title="Dr. Kalinga Nanayakkara" 
+                 data-project-location="Aniwatta"
+                 data-images='["assets/images/projects/dr kalinga nanayakkara at aniwatta/kalinga (1).jpg", "assets/images/projects/dr kalinga nanayakkara at aniwatta/kalinga (2).jpg", "assets/images/projects/dr kalinga nanayakkara at aniwatta/kalinga (3).jpg", "assets/images/projects/dr kalinga nanayakkara at aniwatta/kalinga (4).jpg"]'>
+                <div class="thumb image-anime">
+                    <img src="assets/images/projects/dr kalinga nanayakkara at aniwatta/kalinga (1).jpg" alt="thumb">
+                    <div class="thumb-content">
+                        <h4><a href="#">Dr. Kalinga Nanayakkara</a></h4>
+                        <p>Aniwatta</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Another sample project -->
+            <div class="col-xl-4 col-lg-4 col-md-6 project-item homes mb-4" 
+                 data-project-title="Modern Villa Project" 
+                 data-project-location="Peradeniya"
+                 data-images='["https://via.placeholder.com/800x600/4a90e2/ffffff?text=Villa+Image+1", "https://via.placeholder.com/800x600/7b68ee/ffffff?text=Villa+Image+2", "https://via.placeholder.com/800x600/50c878/ffffff?text=Villa+Image+3"]'>
+                <div class="thumb image-anime">
+                    <img src="https://via.placeholder.com/400x250/4a90e2/ffffff?text=Modern+Villa" alt="thumb">
+                    <div class="thumb-content">
+                        <h4><a href="#">Modern Villa Project</a></h4>
+                        <p>Peradeniya</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Third sample project -->
+            <div class="col-xl-4 col-lg-4 col-md-6 project-item commercial mb-4" 
+                 data-project-title="Commercial Complex" 
+                 data-project-location="Kandy City"
+                 data-images='["https://via.placeholder.com/800x600/ff6b6b/ffffff?text=Commercial+1", "https://via.placeholder.com/800x600/4ecdc4/ffffff?text=Commercial+2"]'>
+                <div class="thumb image-anime">
+                    <img src="https://via.placeholder.com/400x250/ff6b6b/ffffff?text=Commercial+Complex" alt="thumb">
+                    <div class="thumb-content">
+                        <h4><a href="#">Commercial Complex</a></h4>
+                        <p>Kandy City</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap Project Modal -->
+    <div class="modal fade" id="projectModal" tabindex="-1" aria-labelledby="projectModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div>
+                        <h5 class="modal-title project-title" id="projectModalLabel">Project Title</h5>
+                        <p class="project-location mb-0">Location</p>
+                    </div>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-0">
+                    <!-- Bootstrap Carousel -->
+                    <div id="projectCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators" id="carouselIndicators">
+                            <!-- Indicators will be populated by JavaScript -->
+                        </div>
+                        <div class="carousel-inner" id="carouselInner">
+                            <!-- Carousel items will be populated by JavaScript -->
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#projectCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const projectItems = document.querySelectorAll('.project-item');
+            const modal = new bootstrap.Modal(document.getElementById('projectModal'));
+            const modalTitle = document.querySelector('.project-title');
+            const modalLocation = document.querySelector('.project-location');
+            const carouselInner = document.getElementById('carouselInner');
+            const carouselIndicators = document.getElementById('carouselIndicators');
+
+            projectItems.forEach(item => {
+                item.addEventListener('click', function() {
+                    const title = this.dataset.projectTitle;
+                    const location = this.dataset.projectLocation;
+                    const images = JSON.parse(this.dataset.images);
+
+                    // Update modal title and location
+                    modalTitle.textContent = title;
+                    modalLocation.textContent = location;
+
+                    // Clear existing carousel content
+                    carouselInner.innerHTML = '';
+                    carouselIndicators.innerHTML = '';
+
+                    // Populate carousel with images
+                    images.forEach((imageSrc, index) => {
+                        // Create carousel item
+                        const carouselItem = document.createElement('div');
+                        carouselItem.className = `carousel-item ${index === 0 ? 'active' : ''}`;
+                        carouselItem.innerHTML = `<img src="${imageSrc}" class="d-block w-100" alt="${title} - Image ${index + 1}">`;
+                        carouselInner.appendChild(carouselItem);
+
+                        // Create indicator
+                        const indicator = document.createElement('button');
+                        indicator.type = 'button';
+                        indicator.setAttribute('data-bs-target', '#projectCarousel');
+                        indicator.setAttribute('data-bs-slide-to', index);
+                        indicator.setAttribute('aria-label', `Slide ${index + 1}`);
+                        if (index === 0) {
+                            indicator.className = 'active';
+                            indicator.setAttribute('aria-current', 'true');
+                        }
+                        carouselIndicators.appendChild(indicator);
+                    });
+
+                    // Show the modal
+                    modal.show();
+                });
+            });
+        });
+    </script>
+</body>
+</html>
