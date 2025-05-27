@@ -55,6 +55,14 @@
     # All Variables here
 ----------------------------------------------*/
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&amp;display=swap");
+@font-face {
+  font-family: "Futura";
+  src: url("../webfonts/futura.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Helvetica";
+  src: url("../webfonts/Helvetica.ttf") format("truetype");
+}
 :root {
   --body: #fff;
   --black: #000;
@@ -80,7 +88,7 @@
     Template Default Fonts & Fonts Styles
  ---------------------------------------------- */
 body {
-  font-family: "DM Sans", sans-serif;
+  font-family: "Futura", sans-serif;
   font-size: 16px;
   font-weight: normal;
   line-height: 28px;
@@ -118,7 +126,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "DM Sans", sans-serif;
+  font-family: "Helvetica", sans-serif;
   margin: 0px;
   padding: 0;
   color: var(--header);
@@ -138,7 +146,7 @@ h1 {
 }
 
 h2 {
-  font-family: "DM Sans", sans-serif;
+  font-family: "Helvetica", sans-serif;
   font-size: 59.766px;
   font-style: normal;
   font-weight: 700;
@@ -166,7 +174,7 @@ h2 {
 }
 
 h3 {
-  font-family: "DM Sans", sans-serif;
+  font-family: "Helvetica", sans-serif;
   font-size: 26px;
   font-weight: 700;
   line-height: 29.9px;
@@ -178,7 +186,7 @@ h3 {
 }
 
 h4 {
-  font-family: "DM Sans", sans-serif;
+  font-family: "Helvetica", sans-serif;
   font-size: 20px;
   font-weight: 700;
   line-height: 24px;
@@ -190,7 +198,7 @@ h4 {
 }
 
 h5 {
-  font-family: "DM Sans", sans-serif;
+  font-family: "Helvetica", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
@@ -204,7 +212,7 @@ h6 {
 }
 
 h2 a {
-  font-family: "DM Sans", sans-serif;
+  font-family: "Futura", sans-serif;
   font-size: 59.766px;
   font-style: normal;
   font-weight: 700;
@@ -225,7 +233,7 @@ h2 a {
 }
 
 h3 a {
-  font-family: "DM Sans", sans-serif;
+  font-family: "Futura", sans-serif;
   font-size: 26px;
   font-weight: 700;
   line-height: 29.9px;
@@ -238,7 +246,7 @@ h3 a {
 }
 
 h4 a {
-  font-family: "DM Sans", sans-serif;
+  font-family: "Futura", sans-serif;
   font-size: 20px;
   font-weight: 700;
   line-height: 24px;
@@ -246,7 +254,7 @@ h4 a {
 }
 
 h5 a {
-  font-family: "DM Sans", sans-serif;
+  font-family: "Futura", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
@@ -274,7 +282,7 @@ a:hover {
 p {
   margin: 0px;
   transition: all 0.4s ease-in-out;
-  font-family: "DM Sans", sans-serif;
+  font-family: "Futura", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -287,7 +295,7 @@ span {
 }
 
 span a {
-  font-family: "DM Sans", sans-serif;
+  font-family: "Futura", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -2896,7 +2904,7 @@ span a {
   }
 }
 .preloader .animation-preloader .txt-loading {
-  font: bold 5em "DM Sans", sans-serif, "DM Sans", sans-serif;
+  font: bold 5em "Futura", sans-serif, "Futura", sans-serif;
   text-align: center;
   user-select: none;
 }
@@ -2957,7 +2965,7 @@ span a {
   content: attr(data-text-preloader);
   left: 0;
   opacity: 0;
-  font-family: "DM Sans", sans-serif;
+  font-family: "Futura", sans-serif;
   position: absolute;
   top: -3px;
   transform: rotateY(-90deg);
@@ -3499,7 +3507,7 @@ span a {
 }
 .progress-wrap .progress-meta .title {
   color: var(--theme);
-  font-family: "DM Sans", sans-serif;
+  font-family: "Helvetica", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
@@ -3507,7 +3515,7 @@ span a {
 }
 .progress-wrap .progress-meta .percentage {
   color: var(--theme);
-  font-family: "DM Sans", sans-serif;
+  font-family: "Helvetica", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
@@ -3899,7 +3907,7 @@ span a {
   display: flex;
   align-items: center;
   color: var(--title);
-  font-family: "DM Sans", sans-serif;
+  font-family: "Futura", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
@@ -3918,7 +3926,7 @@ span a {
   display: flex;
   align-items: center;
   color: var(--pra-text);
-  font-family: "DM Sans", sans-serif;
+  font-family: "Futura", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -3954,7 +3962,7 @@ span a {
 }
 .about-counter-box.style1 .content .counter {
   color: var(--title);
-  font-family: "DM Sans", sans-serif;
+  font-family: "Futura", sans-serif;
   font-size: 37.25px;
   font-style: normal;
   font-weight: 700;
@@ -3962,7 +3970,7 @@ span a {
 }
 .about-counter-box.style1 .content .text {
   color: var(--text);
-  font-family: "DM Sans", sans-serif;
+  font-family: "Futura", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -4736,7 +4744,7 @@ span a {
   text-align: left;
   position: relative;
   color: var(--title);
-  font-family: "DM Sans", sans-serif;
+  font-family: "Futura", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 500;
@@ -4793,7 +4801,7 @@ span a {
   position: relative;
   z-index: 999;
   color: var(--title);
-  font-family: "DM Sans", sans-serif;
+  font-family: "Futura", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -5330,7 +5338,7 @@ span a {
 }
 .header-top-area .header-top-wrapper .content ul li {
   color: #737373;
-  font-family: "DM Sans", sans-serif;
+  font-family: "Futura", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -5547,7 +5555,7 @@ span a {
 }
 .breadcumb .breadcumb-wrapper .page-heading .breadcrumb-items li {
   color: var(--title);
-  font-family: "DM Sans", sans-serif;
+  font-family: "Futura", sans-serif;
   font-size: 23.625px;
   font-style: normal;
   font-weight: 700;
@@ -5556,7 +5564,7 @@ span a {
 }
 .breadcumb .breadcumb-wrapper .page-heading .breadcrumb-items li a {
   color: var(--title);
-  font-family: "DM Sans", sans-serif;
+  font-family: "Futura", sans-serif;
   font-size: 23.625px;
   font-style: normal;
   font-weight: 700;
@@ -5769,7 +5777,7 @@ span a {
   ul
   li {
   color: var(--white);
-  font-family: "DM Sans";
+  font-family: "Futura";
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
@@ -5796,7 +5804,7 @@ span a {
   li
   a {
   color: var(--white);
-  font-family: "DM Sans";
+  font-family: "Futura";
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
@@ -6143,7 +6151,7 @@ span a {
 }
 .footer-section .footer-bottom .footer-bottom-wrapper P a {
   color: var(--white);
-  font-family: "DM Sans", sans-serif;
+  font-family: "Futura", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -6161,7 +6169,7 @@ span a {
 }
 .footer-section .footer-bottom .footer-bottom-wrapper .footer-services li a {
   color: var(--white);
-  font-family: "DM Sans", sans-serif;
+  font-family: "Futura", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -6823,7 +6831,7 @@ span a {
 .intro-section .intro-wrapper.style2 .inner-left-part .section-title .title h1 {
   color: var(--900, #131313);
   font-feature-settings: "liga" off, "clig" off;
-  font-family: "DM Sans";
+  font-family: "Helvetica";
   font-size: 80px;
   font-style: normal;
   font-weight: 700;
@@ -6887,7 +6895,7 @@ span a {
 }
 .intro-section .intro-wrapper.style2 .inner-left-part .db-content .meta-info a {
   color: var(--title);
-  font-family: "DM Sans", sans-serif;
+  font-family: "Futura", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
@@ -7110,7 +7118,7 @@ span a {
   .metacloud
   span {
   color: var(--title);
-  font-family: "DM Sans", sans-serif;
+  font-family: "Futura", sans-serif;
   font-size: 36.563px;
   font-weight: 700;
   line-height: 30px;
@@ -7569,7 +7577,7 @@ span a {
   .content
   span {
   color: var(--900, #131313);
-  font-family: "DM Sans";
+  font-family: "Futura";
   font-size: 36.563px;
   font-style: normal;
   font-weight: 700;
@@ -7586,7 +7594,7 @@ span a {
   .content
   p {
   color: var(--800, #565969);
-  font-family: "DM Sans";
+  font-family: "Futura";
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -7799,7 +7807,7 @@ span a {
 }
 .about-wrapper.style1 .thumb-box .thumb .clint-counter .content span {
   color: var(--white);
-  font-family: "DM Sans";
+  font-family: "Futura";
   font-size: 36.563px;
   font-style: normal;
   font-weight: 700;
@@ -7808,7 +7816,7 @@ span a {
 }
 .about-wrapper.style1 .thumb-box .thumb .clint-counter .content p {
   color: var(--white);
-  font-family: "DM Sans";
+  font-family: "Futura";
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -7925,7 +7933,7 @@ span a {
 .about-wrapper.style3 .about-left-content .content .experiences h5 {
   color: var(--white);
   text-align: center;
-  font-family: "DM Sans";
+  font-family: "Helvetica";
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
@@ -7995,7 +8003,7 @@ span a {
 }
 .about-wrapper.style3 .about-right-content .title-section .title-content h2 {
   color: var(--title);
-  font-family: "DM Sans";
+  font-family: "Helvetica";
   font-size: 80px;
   font-style: normal;
   font-weight: 700;
@@ -8213,7 +8221,7 @@ span a {
   display: inline-flex;
   padding: 10px 16px;
   color: var(--title);
-  font-family: "DM Sans", sans-serif;
+  font-family: "Futura", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -8265,7 +8273,7 @@ span a {
 }
 .recent-post-area .recent-items .recent-content ul li {
   color: var(--theme);
-  font-family: "DM Sans", sans-serif;
+  font-family: "Futura", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -8281,7 +8289,7 @@ span a {
 }
 .recent-post-area .recent-items .recent-content h6 a {
   color: var(--title);
-  font-family: "DM Sans", sans-serif;
+  font-family: "Futura", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
@@ -8327,7 +8335,7 @@ span a {
 }
 .wch-card-section.style1 .card-box .content span {
   color: var(--White, #fff);
-  font-family: "DM Sans", sans-serif;
+  font-family: "Futura", sans-serif;
   font-size: 36.563px;
   font-style: normal;
   font-weight: 700;
@@ -8343,7 +8351,7 @@ span a {
 }
 .wch-card-section.style1 .card-box .content P {
   color: var(--white);
-  font-family: "DM Sans";
+  font-family: "Futura";
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -8463,7 +8471,7 @@ span a {
 }
 .service-card.style3 ul li {
   color: #565969;
-  font-family: "DM Sans";
+  font-family: "Futura";
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -8531,7 +8539,7 @@ span a {
 }
 .service-card.style4 .content .meta span {
   color: #565969;
-  font-family: "DM Sans";
+  font-family: "Futura";
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
@@ -8673,7 +8681,7 @@ span a {
 }
 .project-card.style3 .thumb-box .thumb-content p {
   color: #565969;
-  font-family: "DM Sans";
+  font-family: "Futura";
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -8768,7 +8776,7 @@ span a {
 .counter-card.style1 .main-counter span {
   color: var(--title);
   text-align: center;
-  font-family: "DM Sans";
+  font-family: "Futura";
   font-size: 59.766px;
   font-style: normal;
   font-weight: 700;
@@ -8801,7 +8809,7 @@ span a {
 .counter-card.style2 .counter-box span {
   color: var(--title);
   text-align: center;
-  font-family: "DM Sans";
+  font-family: "Futura";
   font-size: 56px;
   font-style: normal;
   font-weight: 700;
@@ -8871,7 +8879,7 @@ span a {
 .counter-card.style4 .main-counter span {
   color: var(--title);
   text-align: center;
-  font-family: "DM Sans";
+  font-family: "Futura";
   font-size: 59.766px;
   font-style: normal;
   font-weight: 700;
@@ -9087,7 +9095,7 @@ span a {
 }
 .blog-card.style1 .content .meta span {
   color: #565969;
-  font-family: "DM Sans";
+  font-family: "Futura";
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
@@ -9173,7 +9181,7 @@ span a {
 }
 .blog-card.style2 .thumb-box .content .meta span {
   color: #565969;
-  font-family: "DM Sans";
+  font-family: "Futura";
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
@@ -9234,7 +9242,7 @@ span a {
 }
 .blog-card.style3 .content .meta span {
   color: #565969;
-  font-family: "DM Sans";
+  font-family: "Futura";
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
@@ -9532,7 +9540,7 @@ span a {
   color: var(--white);
   color: var(--White, #fff);
   font-feature-settings: "liga" off, "clig" off;
-  font-family: "DM Sans";
+  font-family: "Futura";
   font-size: 30px;
   font-style: normal;
   font-weight: 400;
@@ -10484,7 +10492,7 @@ span a {
   border-radius: 999px;
   border: 1px solid #e9e9e9;
   color: var(--title);
-  font-family: "DM Sans", sans-serif;
+  font-family: "Futura", sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 28px;
@@ -10495,7 +10503,7 @@ span a {
   border-radius: 999px;
   border: 1px solid #e9e9e9;
   color: var(--title);
-  font-family: "DM Sans", sans-serif;
+  font-family: "Futura", sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 28px;
@@ -10505,7 +10513,7 @@ span a {
   padding: 15px 0 0 30px;
   width: 100%;
   color: var(--title);
-  font-family: "DM Sans", sans-serif;
+  font-family: "Futura", sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 28px;
@@ -11202,7 +11210,7 @@ span a {
 .faq-accordion.style2 .faq-answer p {
   margin: 0;
   color: var(--text);
-  font-family: "DM Sans";
+  font-family: "Futura";
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -11308,7 +11316,7 @@ span a {
 }
 .proj-accordion.style1 .proj-accordion-item .proj-accordion-body p {
   color: #565969;
-  font-family: "DM Sans";
+  font-family: "Futura";
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -11431,7 +11439,7 @@ span a {
 }
 .proj-accordion.style2 .proj-accordion-item .proj-accordion-body p {
   color: #565969;
-  font-family: "DM Sans";
+  font-family: "Futura";
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -11517,7 +11525,7 @@ span a {
   text-align: center;
   border-radius: 50%;
   color: var(--900, #131313);
-  font-family: "DM Sans";
+  font-family: "Futura";
   font-size: 26px;
   font-style: normal;
   font-weight: 700;
@@ -11548,7 +11556,7 @@ span a {
 .accordion.style1 .accordion-item .accordion-collapse .accordion-body p {
   margin-left: 57px;
   color: #565969;
-  font-family: "DM Sans";
+  font-family: "Futura";
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -11573,7 +11581,7 @@ span a {
   text-align: center;
   border-radius: 50%;
   color: var(--900, #131313);
-  font-family: "DM Sans";
+  font-family: "Futura";
   font-size: 26px;
   font-style: normal;
   font-weight: 700;
@@ -11604,7 +11612,7 @@ span a {
 .accordion.style2 .accordion-item .accordion-collapse .accordion-body p {
   margin-left: 57px;
   color: #565969;
-  font-family: "DM Sans";
+  font-family: "Futura";
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -12145,7 +12153,7 @@ span a {
 }
 .scrolling-wrap.style1 .comm .cmn-textslide-1 {
   color: var(--white);
-  font-family: "DM Sans";
+  font-family: "Futura";
   font-size: 59.766px;
   font-style: normal;
   font-weight: 400;
@@ -12161,7 +12169,7 @@ span a {
 }
 .scrolling-wrap.style1 .comm .cmn-textslide-2 {
   color: var(--white);
-  font-family: "DM Sans";
+  font-family: "Futura";
   font-size: 59.766px;
   font-style: normal;
   font-weight: 400;
@@ -12269,7 +12277,7 @@ span a {
 }
 .widget.style1 .single-widget .widget-categories ul li a {
   color: var(--title);
-  font-family: "DM Sans";
+  font-family: "Futura";
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
@@ -12346,7 +12354,7 @@ span a {
   .search-box
   input::placeholder {
   color: rgba(0, 0, 0, 0.7);
-  font-family: "DM Sans", sans-serif;
+  font-family: "Futura", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -12432,7 +12440,7 @@ span a {
 }
 .sidebar-widget .single-widget .tagcloud .tagcloud-item a {
   color: rgba(0, 0, 0, 0.7);
-  font-family: "DM Sans", sans-serif;
+  font-family: "Futura", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -12886,7 +12894,7 @@ span a {
   .content
   h3 {
   color: #131313;
-  font-family: "DM Sans";
+  font-family: "Futura";
   font-size: 36.563px;
   font-style: normal;
   font-weight: 700;
@@ -12917,7 +12925,7 @@ span a {
 }
 .project-details-wrapper .project-details-info .slider-btn .left-btn a {
   color: var(--title);
-  font-family: "DM Sans";
+  font-family: "Futura";
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
@@ -12933,7 +12941,7 @@ span a {
 }
 .project-details-wrapper .project-details-info .slider-btn .right-btn a {
   color: var(--title);
-  font-family: "DM Sans";
+  font-family: "Futura";
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
@@ -13026,7 +13034,7 @@ span a {
 }
 .service-details-wrapper .service-details .content p {
   color: #565969;
-  font-family: "DM Sans";
+  font-family: "Futura";
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -13520,7 +13528,7 @@ span a {
 }
 .git-wrapper.style1 .contract-info .items h4 {
   color: var(--white);
-  font-family: "DM Sans";
+  font-family: "Helvetica";
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
@@ -13921,4 +13929,29 @@ span a {
   .hidden-on-992 {
     display: none !important;
   }
+}
+@media (min-width: 1200px){
+.my-quick-links{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+}
+/*messenger float btn*/
+.float {
+  position: fixed;
+  width: 48px;
+  height: 48px;
+  bottom: 20px;
+  right: 80px;
+  background-color: #168aff;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 25px;
+  z-index: 100;
+}
+.my-float {
+  margin-top: 12px;
 }
