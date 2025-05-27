@@ -32,8 +32,8 @@
                             </div>
                             <div class="content">
                                 <a
-                                    href="mailto:sampathcounstruction@example.com"><span
-                                        >sampathcounstruction@example.com</span></a>
+                                    href="mailto:sampathconstructions.official@gmail.com"><span
+                                        >sampathconstructions.official@gmail.com</span></a>
                                 <div class="titles">
                                     <p>Email</p>
                                 </div>
