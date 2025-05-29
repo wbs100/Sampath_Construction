@@ -13935,6 +13935,11 @@ span a {
     display: none !important;
   }
 }
+@media (min-width: 991px) {
+  .visible-on-992 {
+    display: none !important;
+  }
+}
 @media (min-width: 1200px){
 .my-quick-links{
   display: flex;
@@ -13996,4 +14001,8 @@ span a {
 .project-location {
     color: #666;
     font-size: 0.9rem;
+}
+
+.text-justify{
+  text-align: justify;
 }
