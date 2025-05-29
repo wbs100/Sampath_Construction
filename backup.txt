@@ -44,7 +44,7 @@
                                 <i class="fa-solid fa-location-dot"></i>
                             </div>
                             <div class="content">
-                                <h4>Peradeniya Road, Kandy</h4>
+                                <h4>No. 232/A, Eriyagama, Peradeniya</h4>
                                 <div class="titles">
                                     <p>Location</p>
                                 </div>
